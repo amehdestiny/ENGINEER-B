@@ -3,7 +3,7 @@ QUESTIONS = [
      ["Accept", "Reject and preserve data", "Resolve it", "Delete it"], "B"),
 
     ("What is the resolution percentage with zero tickets?",
-     ["Crash", "100%", "0%", "Divide by one"], "C"),
+     ["Crash", "100%", "0%", "Divides by one"], "C"),
 
     ("How should combined search filters work?",
      ["Match any filter", "Match all filters", "Network only", "Open only"], "B"),
@@ -12,10 +12,10 @@ QUESTIONS = [
      ["Append it", "Delete old notes", "Reject until reopened", "Change status"], "C"),
 
     ("What happens when JSON contains duplicate ticket IDs?",
-     ["Keep both", "Replace memory", "Reject the load", "Rename IDs"], "C"),
+     ["Keep both", "Replace memory", "Rejects the load", "Rename IDs"], "C"),
 
     ("A PR changes validation but has no negative tests.",
-     ["Approve immediately", "Request focused tests", "Merge immediately", "Ask AI to approve"], "B")
+     ["Approved immediately", "Request focused tests", "Merge immediately", "Ask AI to approve"], "B")
 ]
 
 
@@ -48,7 +48,7 @@ def run_quiz():
 
     for number in (1, 2):
         explanation = input(
-            f"Explain why your answer to Q{number} is correct: "
+            f"Please explain why your answer to Q{number} is correct: "
         ).strip()
 
         print("Your explanation:", explanation)
