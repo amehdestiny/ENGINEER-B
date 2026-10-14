@@ -19,7 +19,7 @@ class TestSearch(unittest.TestCase):
 
     def test_combined_filters(self):
         result = search_tickets(
-            self.tickets, "wifi", "Network", "open", "high"
+            self.tickets, "wi-fi", "Network", "open", "high"
         )
         self.assertEqual([t["id"] for t in result], [1])
 
